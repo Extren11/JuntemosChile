@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>JuntemosChile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-md="6" size-lg="4" *ngFor="let reporte of reportes">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>{{ reporte.usuario }}</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <p><strong>Reporte:</strong> {{ reporte.contexto }}</p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
