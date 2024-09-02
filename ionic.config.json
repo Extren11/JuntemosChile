@@ -1,0 +1,7 @@
+{
+  "name": "JuntemosChile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
