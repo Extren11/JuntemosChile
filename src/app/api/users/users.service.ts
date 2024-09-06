@@ -7,8 +7,10 @@ import { Usuario } from 'src/app/models/usuario';
 export class UsersService {
 
   private usuarios: Usuario[] = [
-    { username: 'admin', password: 'admin123', role: 'admin' },
-    { username: 'user', password: 'user123', role: 'user' }
+    { username: 'admin', password: 'admin123', role: 'administrador' },
+    { username: 'coord', password: 'coord123', role: 'coordinador' },
+    { username: 'ciuda', password: 'ciuda123', role: 'ciudadano' },
+    { username: 'volun', password: 'volun123', role: 'voluntario' }
   ];
 
   constructor() { }

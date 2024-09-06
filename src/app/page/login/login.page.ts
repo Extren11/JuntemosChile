@@ -16,14 +16,17 @@ export class LoginPage {
   constructor(private _usersLogin: UsersService, private router: Router) { }
 
   login() {
-    const userLogin: Usuario = { username: this.username, password: this.password, role: 'user' };
+    const userLogin: Usuario = { username: this.username, password: this.password, role: 'administrador' };
 
     if (this._usersLogin.validar_usuario(userLogin)) {
+      // Obtener el rol del usuario
+      const role = this._usersLogin.getUsuarioRole(userLogin);
+      console.info(`Iniciaste sesión como ${role}`);
+
       // Redirige a la página de productos si el login es exitoso
-      console.info('Iniciaste sesion');
-       this.router.navigate(['home'], {
+      this.router.navigate(['home'], {
         state: {
-           userInfo: userLogin
+          userInfo: userLogin
         }
       });
     } else {

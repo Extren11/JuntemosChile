@@ -1,0 +1,61 @@
+ion-content {
+    --background: blue; /* Fondo azul bandera de Chile */
+  }
+  
+  .title-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .app-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: white; /* Título en blanco */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .logo {
+    width: 120px; /* Ajusta el tamaño de la imagen */
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white; /* Borde blanco */
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+  }
+  
+  form {
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  ion-item {
+    --background: rgba(255, 255, 255, 0.8); /* Fondo blanco para los inputs */
+    margin-bottom: 16px;
+    border-radius: 10px;
+    --color: #0033a0; /* Texto azul dentro de los inputs */
+  }
+  
+  ion-button {
+    --background: #d52b1e; /* Botón rojo bandera de Chile */
+    --color: white; /* Texto blanco en el botón */
+    --border-radius: 50px;
+    margin-top: 20px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  

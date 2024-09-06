@@ -1,22 +1,28 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <form>
-    <ion-item>
-      <ion-label position="floating">Username</ion-label>
-      <ion-input type="text" [(ngModel)]="username" name="username"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Password</ion-label>
-      <ion-input type="password" [(ngModel)]="password" name="password">
-        <ion-input-password-toggle slot="end"></ion-input-password-toggle>
-      </ion-input>
-    </ion-item>
-     <!-- click se utiliza para que al hacer click llame a la funcion login -->
-    <ion-button expand="full" (click)="login()">Login</ion-button>
-  </form>
+  <!-- Título centrado -->
+  <div class="title-container">
+    <h1 class="app-title">JuntemosChile</h1>
+  </div>
+
+  <!-- Imagen de logo centrada -->
+  <div class="logo-container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/1024px-Flag_of_Chile.svg.png" alt="Logo" class="logo">
+  </div>
+
+  <!-- Formulario de login centrado -->
+  <div class="login-container">
+    <form>
+      <ion-item>
+        <ion-label position="floating">Username</ion-label>
+        <ion-input type="text" [(ngModel)]="username" name="username"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password" name="password">
+          <ion-input-password-toggle slot="end"></ion-input-password-toggle>
+        </ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="login()">Login</ion-button>
+    </form>
+  </div>
 </ion-content>

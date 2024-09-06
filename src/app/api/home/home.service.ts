@@ -9,11 +9,16 @@ export class HomeService {
   private reportes: Reporte[] = [
     {
       usuario: "@bvnjjaaa",
-      contexto: "Se requiere personal para retiro de escombros."
+      contexto: "Se requiere personal para retiro de escombros.",
+      region: "Valparaiso",
+      comuna: "Quilpué"
+
     },
     {
       usuario: "@nelsonme",
-      contexto: "Se requieren alimentos perecibles para familia con casa impactada por incendio." 
+      contexto: "Se requieren alimentos perecibles para familia con casa impactada por incendio.",
+      region: "Valparaiso",
+      comuna: "Quilpué"
     }
   ]
 
