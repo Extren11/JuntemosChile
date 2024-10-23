@@ -14,7 +14,23 @@ const routes: Routes = [
     path: '',
     redirectTo: 'login',
     pathMatch: 'full'
+  },  {
+    path: 'solicitud-reportes',
+    loadChildren: () => import('./page/solicitud-reportes/solicitud-reportes.module').then( m => m.SolicitudReportesPageModule)
   },
+  {
+    path: 'resumen-reportes',
+    loadChildren: () => import('./page/resumen-reportes/resumen-reportes.module').then( m => m.ResumenReportesPageModule)
+  },
+  {
+    path: 'reportes-inscritos',
+    loadChildren: () => import('./page/reportes-inscritos/reportes-inscritos.module').then( m => m.ReportesInscritosPageModule)
+  },
+  {
+    path: 'cambiar-rol',
+    loadChildren: () => import('./page/cambiar-rol/cambiar-rol.module').then( m => m.CambiarRolPageModule)
+  },
+
 ];
 
 @NgModule({
